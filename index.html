@@ -4,15 +4,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" sizes="16x16" type="image/svg" href="favicon.svg">
+
     <title>Our Quotient</title>
     <!-- css links -->
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
 </head>
 
 <body>
+    <header id="dynamic">
+        <div class="container">
+            <nav class="navbar main-navigation">
+                <button class="menu-toggle" id="MenuToggle" aria-label="menu toggle button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="primary-menu-container">
+                    <ul class="nav-menu container">
+                        <li class="menu-item">
+                            <a href="" class="navlink"><span class="hover-line"></span>About us</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="" class="navlink"><span class="hover-line"></span>TeamQuotient</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="" class="navlink"><span class="hover-line"></span>Search</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="" class="navlink"><span class="hover-line"></span>Cart</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="" class="navlink"><span class="hover-line"></span>Account</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="" class="navlink"><span class="hover-line"></span>Contact</a>
+                        </li>
+                    </ul>
+                </div>
 
+                <div class="navbar-branding">
+                    <a class="navbar-brand" href>
+                        <img src="./images/main-logo.svg" alt="our quotient" />
+                    </a>
+                </div>
+                <div class="contactusbtnwrap">
+                    <a href class="primary-btn">
+                        <span class="btn-group">
+                            <span class="primarybtntext">contact us</span>
+                        </span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="herosection" style="background-image:url('./images/background-pattern.svg');">
+            <img src="./images/background-video.gif" alt="background video" class="bg_video">
+            <div class="container">
+
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/custom.js"></script>
 </body>
 
 </html>
