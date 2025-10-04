@@ -61,6 +61,45 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?8pszur');
+    src: url('../fonts/icomoon.eot?8pszur#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?8pszur') format('truetype'),
+        url('../fonts/icomoon.woff?8pszur') format('woff'),
+        url('../fonts/icomoon.svg?8pszur#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-union:before {
+    content: "\e900";
+    color: #fff;
+    font-size: 16px;
+}
+
+.icon-white-arrow:before {
+    content: "\e901";
+    color: #fff;
+    font-size: 32px;
+}
+
 /* root style */
 body {
     margin: 0;
@@ -110,13 +149,6 @@ h6,
 p,
 .p {
     font-size: 28px;
-}
-
-.subtitle {
-    font-size: 20px;
-    color: var(--white);
-    font-family: 'NeueMontreal Regular';
-    font-weight: 400;
 }
 
 .blue_bg {
@@ -240,7 +272,7 @@ li {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #0e2633;
+    background-color: #545454;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -259,15 +291,15 @@ li {
 }
 
 .sec-padding {
-    padding: 100px 0;
+    padding: 120px 0;
 }
 
-.pt_100 {
-    padding-top: 100px;
+.pt_120 {
+    padding-top: 120px;
 }
 
-.pb_100 {
-    padding-bottom: 100px;
+.pb_120 {
+    padding-bottom: 120px;
 }
 
 .p-0 {
@@ -411,7 +443,7 @@ header {
     visibility: visible;
 }
 
-.btn-group {
+.primary-btn>span {
     background-color: var(--white);
     color: var(--black);
     font-family: 'Gilroy Regular';
@@ -425,6 +457,18 @@ header {
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
     padding: 23px 20px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.primary-btn>span:hover {
+    background: transparent;
+    color: var(--white);
 }
 
 .navlink {
@@ -436,11 +480,11 @@ header {
     display: flex;
     align-items: center;
     overflow: hidden;
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
+}
+
+.navlink:hover {
+    color: var(--Yellow);
+    font-style: italic;
 }
 
 .hover-line {
@@ -453,10 +497,6 @@ header {
     -moz-transition: width 0.3s ease;
     -ms-transition: width 0.3s ease;
     -o-transition: width 0.3s ease;
-}
-
-.navlink:hover {
-    color: var(--Yellow);
 }
 
 .navlink:hover .hover-line {
@@ -489,7 +529,7 @@ header {
     padding: 100px 0 100px;
     height: 100%;
     display: flex;
-    align-items: center;
+    align-items: end;
 }
 
 .bg_video {
@@ -505,4 +545,359 @@ header {
     width: 161.9375rem;
     height: 121.4375rem;
     object-fit: cover;
+}
+
+.grouptitlewrap {
+    width: 100%;
+}
+
+.herosectiontitle {
+    color: var(--white);
+    font-family: 'NeueMontreal Regular';
+    display: flex;
+    flex-direction: column;
+}
+
+.herosubtitle {
+    font-size: 120px;
+    line-height: 1;
+}
+
+.herotitle {
+    font-size: 180px;
+    display: inline-block;
+    margin: 0;
+    font-weight: normal;
+}
+
+.swipetext {
+    font-style: italic;
+    /* overflow: hidden; */
+    display: inline-block;
+}
+
+.swipetext>span {
+    position: relative;
+    top: 0;
+    /* animation: move 12s cubic-bezier(0.7, 0.1, 0.1, 1) infinite;
+    -webkit-animation: move 12s cubic-bezier(0.7, 0.1, 0.1, 1) infinite; */
+}
+
+@keyframes move {
+
+    0%,
+    7.143% {
+        transform: none;
+    }
+
+    14.286%,
+    21.429% {
+        transform: translateY(-12.5%);
+    }
+
+    28.572%,
+    35.715% {
+        transform: translateY(-25%);
+    }
+
+    42.858%,
+    50% {
+        transform: translateY(-37.5%);
+    }
+
+    57.144%,
+    64.287% {
+        transform: translateY(-50%);
+    }
+
+    71.43%,
+    78.573% {
+        transform: translateY(-62.5%);
+    }
+
+    85.716%,
+    92.859% {
+        transform: translateY(-75%);
+    }
+
+    100% {
+        transform: translateY(-87.5%);
+    }
+}
+
+.aboutussection {
+    padding: 240px 0;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: var(--white);
+    font-family: 'NeueMontreal Regular';
+    font-weight: 400;
+}
+
+.subtitlewrap {
+    display: inline-flex;
+    gap: 10px;
+}
+
+.abouts_right p {
+    margin: 0;
+    font-family: 'NeueMontreal Light';
+}
+
+.aboutus_row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 32px;
+}
+
+.abouts_left {
+    max-width: 674px;
+    width: 100%;
+}
+
+.abouts_right {
+    flex: 1;
+}
+
+/* marquee */
+.marquee-flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: max-content;
+    animation: marquee-animate 16s linear infinite;
+    -webkit-animation: marquee-animate 16s linear infinite;
+}
+
+.marquee-content {
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee-flex:hover {
+    animation-play-state: paused;
+}
+
+.marquee-content {
+    min-width: 266px;
+    min-height: 124px;
+}
+
+.marquee-flex {
+    gap: 32px;
+}
+
+@keyframes marquee-animate {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* end */
+.marqueetext {
+    font-size: 240px;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.aboutussection .marquee {
+    margin: 120px 0 0;
+}
+
+.turningsection {
+    overflow: hidden;
+    padding: 280px 0;
+    text-align: center;
+}
+
+.turningmiddletitle h2 {
+    margin: 0;
+    font-family: 'NeueMontreal Light';
+    font-size: 120px;
+    text-transform: capitalize;
+    font-weight: normal;
+    line-height: 1;
+}
+
+.ourservices {
+    position: relative;
+    z-index: 1;
+}
+
+.ourservices::before {
+    position: absolute;
+    content: '';
+    background-image: url(../images/background-video.gif);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: color-dodge;
+    background-size: 100%;
+    background-position: center;
+    z-index: -1;
+}
+
+.ourservices_title h2 {
+    margin: 32px 0 0;
+    font-weight: normal;
+}
+
+.serviceslist_wrapper {
+    padding: 120px 0 0;
+}
+
+.serviceslist_item {
+    position: relative;
+    margin: 0 0 40px;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+.serviceslist_item:last-child {
+    margin: 0 0 0;
+}
+
+.serviceslist_content h3 {
+    font-weight: normal;
+    margin: 0 0 24px;
+    transform: skew(0deg);
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -webkit-transform: skew(0deg);
+    -moz-transform: skew(0deg);
+    -ms-transform: skew(0deg);
+    -o-transform: skew(0deg);
+}
+
+.serviceslist_content p {
+    font-size: 20px;
+    margin: 0;
+    font-family: 'Gilroy Light';
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+.listinner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.serviceslist_number {
+    padding-right: 156px;
+}
+
+.serviceslist_content {
+    max-width: 50%;
+}
+
+.servicearrow {
+    margin-left: auto;
+}
+
+.overlayserviceimage {
+    position: absolute;
+    right: 260px;
+    z-index: 4;
+    max-width: 537px;
+    aspect-ratio: 537 / 343;
+    opacity: 0;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+
+.service_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.serviceslist_item:hover .overlayserviceimage {
+    opacity: 1;
+    transform: rotate(6.58deg);
+    -webkit-transform: rotate(6.58deg);
+    -moz-transform: rotate(6.58deg);
+    -ms-transform: rotate(6.58deg);
+    -o-transform: rotate(6.58deg);
+}
+
+.serviceslist_item:hover {
+    background-color: var(--white);
+}
+
+.serviceslist_item .serviceslist_number>span {
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+.serviceslist_item:hover .serviceslist_number>span {
+    color: var(--Orange);
+}
+
+.serviceslist_item:hover .serviceslist_content h3 {
+    color: var(--Orange);
+    font-family: 'NeueMontreal Medium';
+    transform: skew(-10deg);
+    -webkit-transform: skew(-10deg);
+    -moz-transform: skew(-10deg);
+    -ms-transform: skew(-10deg);
+    -o-transform: skew(-10deg);
+}
+
+.serviceslist_item:hover .serviceslist_content p {
+    color: var(--black);
+}
+
+.serviceslist_item:hover .icon-white-arrow {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+
+.serviceslist_item:hover .icon-white-arrow:before {
+    color: var(--Orange)
+}
+
+.serviceslist_item .icon-white-arrow {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
 }
