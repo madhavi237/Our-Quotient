@@ -745,13 +745,10 @@ header {
     z-index: -1;
 }
 
-.ourservices_title h2 {
+.ourservices_title h2,
+.ourclients_title h2 {
     margin: 32px 0 0;
     font-weight: normal;
-}
-
-.serviceslist_wrapper {
-    padding: 120px 0 0;
 }
 
 .serviceslist_item {
@@ -901,4 +898,198 @@ header {
     -moz-transition: all 0.4s ease;
     -ms-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
+}
+
+.ourclients_title {
+    text-align: center;
+}
+
+.ourclients-marquee {
+    position: relative;
+    max-width: 1328px;
+    margin: 0 auto;
+}
+
+.ourclients-marquee .marquee-content {
+    min-width: 200px;
+    min-height: 200px;
+    aspect-ratio: 200/200;
+}
+
+.ourclients-marquee .marquee-flex {
+    position: relative;
+    z-index: 1;
+}
+
+.greadientbox {
+    position: absolute;
+    top: 0;
+    width: 280px;
+    height: 200px;
+    z-index: 2;
+}
+
+.greadientbox.left {
+    left: 0;
+    background: linear-gradient(to right, rgba(29, 45, 87, 1)0%, rgba(29, 45, 87, 0) 100%);
+}
+
+.greadientbox.right {
+    right: 0;
+    background: linear-gradient(to left, rgba(29, 45, 87, 1)0%, rgba(29, 45, 87, 0) 100%);
+}
+
+.workwedo_sec {
+    position: relative;
+    z-index: 1;
+    min-height: 980px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.workwedo_middletext {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+
+.workwedo_middletext h2 {
+    margin: 0;
+    font-family: 'NeueMontreal Medium';
+    font-weight: normal;
+    font-size: 15rem;
+    line-height: 12rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.bgpattern::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.herosection.bgpattern::before {
+    background-image: url('../images/background-pattern1.svg');
+    inset: -60% 0 0 0;
+}
+
+.workwedo_sec.bgpattern::before {
+    background-image: url('../images/background-pattern2.svg');
+    background-position: center 26%;
+    background-size: 100%;
+}
+
+.workwedo_wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.workwedo_box {
+    position: relative;
+    z-index: 4;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    -ms-transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.workwedo_box:hover {
+    opacity: 1;
+}
+
+.workwedo_img {
+    aspect-ratio: 480/327;
+    max-height: 327px;
+    /* width: 100%; */
+}
+
+.workwedo_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    -webkit-transition: transform 0.4s ease;
+    -moz-transition: transform 0.4s ease;
+    -ms-transition: transform 0.4s ease;
+    -o-transition: transform 0.4s ease;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+.workwedo_box:hover .workwedo_img img {
+    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -o-transform: scale(1.4);
+}
+
+.workwedo_arrow {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.workwedo_arrow .icon-white-arrow {
+    border-radius: 50%;
+    width: 136px;
+    height: 136px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(24px);
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    -ms-transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    opacity: 0;
+}
+
+.workwedo_box:hover .icon-white-arrow {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.workwedo_box .icon-white-arrow:before {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+.workwedo_box:hover .icon-white-arrow:before {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
 }
