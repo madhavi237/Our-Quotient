@@ -22,7 +22,7 @@
                     <span></span>
                     <span></span>
                 </button>
-                <div class="primary-menu-container">
+                <div class="primary-menu-container" id="primary-menu">
                     <ul class="nav-menu container">
                         <li class="menu-item">
                             <a href="" class="navlink"><span class="hover-line"></span>Home</a>
@@ -387,7 +387,7 @@
             </div>
         </section>
 
-        <section class="ourpropmise_sec sec-padding">
+        <section class="ourpropmise_sec sec-padding overflow-hidden">
             <div class="container">
                 <div class="ourpropmise_title text_blue">
                     <div class="subtitlewrap">
@@ -595,6 +595,20 @@
     </footer>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/custom.js"></script>
+    <script>
+
+        // Highlight the active menu item based on the current page URL//
+        var currentPageURL = window.location.href;
+        var menuItems = document.querySelectorAll('#primary-menu a.navlink');
+
+        menuItems.forEach(function (item) {
+            // Compare href attribute with current page URL
+            if (item.href === currentPageURL) {
+                // Add active class to the menu item
+                item.classList.add('isactive');
+            }
+        });
+    </script>
 </body>
 
 </html>

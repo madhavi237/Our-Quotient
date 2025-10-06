@@ -18,3 +18,16 @@ jQuery(document).ready(function ($) {
     });
 });
 
+// lock background scroll js
+document.addEventListener("DOMContentLoaded", function () {
+    const menu = document.querySelector(".primary-menu-container");
+    const toggleBtn = document.querySelector(".menu-toggle");
+
+    if (toggleBtn && menu) {
+        // Open menu
+        toggleBtn.addEventListener("click", function () {
+            menu.classList.toggle("open");
+            document.body.classList.toggle("menu-open");
+        });
+    }
+});
