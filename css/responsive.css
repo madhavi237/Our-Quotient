@@ -422,6 +422,69 @@
 }
 
 @media (max-width: 1199px) {
+    .overlayserviceimage {
+        position: static;
+        opacity: 1;
+        padding: 0;
+        order: 4;
+        margin: 40px 0 0 80px;
+        display: none;
+    }
+
+    .serviceslist_content {
+        max-width: 80%;
+        order: 2;
+    }
+
+    .serviceslist_number {
+        order: 1;
+    }
+
+    .servicearrow {
+        order: 3;
+    }
+
+    .serviceslist_item:hover {
+        background-color: var(--Blue);
+    }
+
+    .serviceslist_item:hover .serviceslist_number>span,
+    .serviceslist_item:hover .serviceslist_content p {
+        color: var(--white);
+    }
+
+    .serviceslist_item:hover .serviceslist_content h3,
+    .serviceslist_item .serviceslist_content h3 {
+        color: var(--white);
+        font-family: 'NeueMontreal Medium';
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+    }
+
+    .serviceslist_item:hover .overlayserviceimage {
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+    }
+
+    .serviceslist_item:hover .icon-white-arrow:before {
+        color: var(--white);
+    }
+
+    .serviceslist_item:hover .icon-white-arrow,
+    .serviceslist_item .icon-white-arrow {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+    }
+
     .footer_grid {
         gap: 24px;
     }
@@ -563,6 +626,14 @@
 }
 
 @media (max-width: 991px) {
+    .serviceslist_number {
+        padding-right: 30px;
+    }
+
+    .overlayserviceimage {
+        margin: 30px 0 0 50px;
+    }
+
     ul.footer-links {
         padding: 0;
         min-width: 100%;
@@ -616,6 +687,10 @@
 }
 
 @media (max-width: 768px) {
+    .serviceslist_item {
+        margin: 0 0 10px;
+    }
+
     .availableforwork_title h2 {
         margin: 14px 0 0;
     }
@@ -695,6 +770,10 @@
 }
 
 @media (max-width: 575px) {
+    .serviceslist_number {
+        padding-right: 16px;
+    }
+
     .mask_text {
         font-size: 23vw;
     }
