@@ -770,6 +770,10 @@
 }
 
 @media (max-width: 575px) {
+    .icon-white-arrow:before {
+        font-size: 22px;
+    }
+
     .serviceslist_number {
         padding-right: 16px;
     }
@@ -879,6 +883,11 @@
 }
 
 @media (max-width: 380px) {
+    .serviceslist_content p {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
     .footer_grid {
         grid-template-columns: 1fr;
     }
