@@ -619,6 +619,7 @@ header {
 
 .subtitle {
     font-size: 20px;
+    padding: 2px 0 0 0;
     color: var(--white);
     font-family: 'NeueMontreal Regular';
     font-weight: 400;
@@ -637,12 +638,12 @@ header {
 .aboutus_row {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: start;
     gap: 32px;
 }
 
 .abouts_left {
-    max-width: 674px;
+    max-width: 41%;
     width: 100%;
 }
 
@@ -668,11 +669,6 @@ header {
     animation-play-state: paused;
 }
 
-.marquee-content {
-    min-width: 266px;
-    min-height: 124px;
-}
-
 .marquee-flex {
     gap: 32px;
 }
@@ -689,7 +685,8 @@ header {
 
 /* end */
 .marqueetext {
-    font-size: 240px;
+    font-size: clamp(70px, 12.5vw, 240px);
+    line-height: 12rem;
     text-transform: uppercase;
     color: var(--white);
 }

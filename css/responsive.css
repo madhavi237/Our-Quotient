@@ -15,8 +15,16 @@
 }
 
 @media (max-width: 1699px) {
+    .aboutussection .marquee {
+        margin: 100px 0 0;
+    }
+
     .herosection {
         padding: 150px 0 50px;
+    }
+
+    p, .p {
+        font-size: 24px;
     }
 
     .container {
@@ -52,6 +60,10 @@
 }
 
 @media (max-width: 1600px) {
+    .icon-union:before {
+        font-size: 14px;
+    }
+
     .bg_video {
         height: 106.4375rem;
         top: -53.5rem;
@@ -64,6 +76,18 @@
 
     .herotitle {
         font-size: 140px;
+    }
+
+    .aboutussection .marquee {
+        margin: 70px 0 0;
+    }
+
+    .aboutus_row {
+        gap: 24px;
+    }
+
+    .aboutussection {
+        padding: 160px 0;
     }
 
     .container {
@@ -80,12 +104,20 @@
 }
 
 @media (max-width: 1450px) {
+    .marqueetext {
+        line-height: 9rem;
+    }
+
     .herosubtitle {
         font-size: 88px;
     }
 
     .herotitle {
         font-size: 128px;
+    }
+
+    p, .p {
+        font-size: 22px;
     }
 
     .primary-btn>span {
@@ -104,12 +136,29 @@
 }
 
 @media (max-width: 1350px) {
+    .subtitle {
+        font-size: 18px;
+        padding: 5px 0 0 0;
+    }
+
+    .icon-union:before {
+        font-size: 12px;
+    }
+
+    .subtitlewrap {
+        gap: 8px;
+    }
+
     .herosubtitle {
         font-size: 82px;
     }
 
     .herotitle {
         font-size: 120px;
+    }
+
+    p, .p {
+        font-size: 20px;
     }
 
     .container {
@@ -150,6 +199,18 @@
 }
 
 @media (max-width: 1199px) {
+    .abouts_left {
+        max-width: 38%;
+    }
+
+    .marqueetext {
+        line-height: 6rem;
+    }
+
+    .aboutussection {
+        padding: 120px 0;
+    }
+
     .herosection.bgpattern::before {
         inset: -38% 0 0 0;
     }
@@ -181,6 +242,10 @@
 }
 
 @media (max-width: 1024px) {
+    .abouts_left {
+        max-width: 30%;
+    }
+
     .bg_video {
         left: 30.5rem;
     }
@@ -208,6 +273,10 @@
 }
 
 @media (max-width: 991px) {
+    .aboutus_row {
+        flex-direction: column;
+    }
+
     .bg_video {
         top: -45.5rem;
         left: 23.5rem;
@@ -231,6 +300,22 @@
 }
 
 @media (max-width: 768px) {
+    .abouts_left {
+        max-width: 100%;
+    }
+
+    .aboutus_row {
+        gap: 18px;
+    }
+
+    .aboutussection {
+        padding: 60px 0;
+    }
+
+    .aboutussection .marquee {
+        margin: 50px 0 0;
+    }
+
     .herosection.bgpattern::before {
         transform: scale(2);
         opacity: 0.3;
@@ -273,6 +358,10 @@
 }
 
 @media (max-width: 575px) {
+    .marqueetext {
+        line-height: 4rem;
+    }
+
     .bg_video {
         left: 0;
         bottom: 0;
@@ -327,6 +416,10 @@
 }
 
 @media (max-width: 380px) {
+    .marqueetext {
+        font-size: 60px;
+    }
+
     .bg_video {
         height: 75vh;
     }
