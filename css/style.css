@@ -785,6 +785,7 @@ header {
 
 .serviceslist_number {
     padding-right: 156px;
+    margin-bottom: auto;
 }
 
 .serviceslist_content {
@@ -799,6 +800,7 @@ header {
     position: absolute;
     right: 260px;
     z-index: 4;
+    padding: 0 22px;
     max-width: 537px;
     aspect-ratio: 537 / 343;
     opacity: 0;
@@ -1096,9 +1098,10 @@ footer.bgpattern::before {
 
 .ourpropmise_item h3 {
     color: var(--Pink);
+    line-height: 1;
     font-weight: normal;
     opacity: 0.1;
-
+    margin: 0;
 }
 
 .ourpropmise_title {
@@ -1125,6 +1128,8 @@ footer.bgpattern::before {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
 }
 
 .testimonialauthor h3,
@@ -1137,11 +1142,11 @@ footer.bgpattern::before {
 
 .testimonial_item p {
     margin: 0 0 40px;
+    line-height: 1.2em;
 }
 
 .testimonialwrap .marquee-content {
     min-width: 486px;
-    min-height: 272px;
     max-width: 486px;
 }
 
@@ -1161,6 +1166,7 @@ footer.bgpattern::before {
 }
 
 .testimonial_sec .bg_video {
+    z-index: -1;
     width: 84.0625rem;
     right: -35rem;
     left: auto;
@@ -1171,6 +1177,10 @@ footer.bgpattern::before {
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     object-fit: contain;
+}
+
+.availableforwork .container {
+    padding: 120px 0;
 }
 
 .availableforwork {

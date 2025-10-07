@@ -1,4 +1,21 @@
 @media (max-width: 1850px) {
+    .authorimg {
+        height: 55px;
+        width: 55px;
+    }
+
+    .testimonialwrap .marquee-flex {
+        gap: 160px;
+    }
+
+    .testimonial_item p {
+        font-size: 26px;
+    }
+
+    .overlayserviceimage {
+        max-width: 456px;
+    }
+
     .herotitle {
         font-size: 160px;
     }
@@ -15,6 +32,34 @@
 }
 
 @media (max-width: 1699px) {
+    .testimonialauthor h3, .testimonialauthor span {
+        font-size: 18px;
+    }
+
+    .ourpropmise_title h4 {
+        font-size: 24px;
+    }
+
+    .ourpropmise_wrapper {
+        gap: 20px;
+    }
+
+    .icon-white-arrow:before {
+        font-size: 26px;
+    }
+
+    .overlayserviceimage {
+        max-width: 400px;
+    }
+
+    .serviceslist_number {
+        padding-right: 130px;
+    }
+
+    .serviceslist_content h3 {
+        margin: 0 0 20px;
+    }
+
     .turningmiddletitle h2 {
         font-size: 100px;
     }
@@ -29,6 +74,18 @@
 
     .herosection {
         padding: 150px 0 50px;
+    }
+
+    .ourpropmise_title p {
+        font-size: 18px;
+    }
+
+    .serviceslist_content p {
+        font-size: 18px;
+    }
+
+    h2, .h2 {
+        font-size: 64px;
     }
 
     p, .p {
@@ -68,6 +125,39 @@
 }
 
 @media (max-width: 1600px) {
+    .availableforwork_title h2 {
+        margin: 24px 0 0;
+    }
+
+    .testimonial_item p {
+        font-size: 24px;
+    }
+
+    .testimonialwrap .marquee-content {
+        min-width: auto;
+        max-width: 420px;
+    }
+
+    .testimonialauthor {
+        gap: 20px;
+    }
+
+    .ourpropmise_title h4 {
+        margin: 70px 0 18px;
+    }
+
+    .ourpropmise_wrapper {
+        padding: 70px 0 0;
+    }
+
+    .ourservices_title h2, .ourclients_title h2, .ourpropmise_title h2 {
+        margin: 24px 0 0;
+    }
+
+    .marquee-flex {
+        gap: 24px;
+    }
+
     .turningsection {
         padding: 200px 0;
     }
@@ -102,6 +192,18 @@
         padding: 160px 0;
     }
 
+    .sec-padding {
+        padding: 100px 0;
+    }
+
+    .pt_120 {
+        padding-top: 100px;
+    }
+
+    .pb_120 {
+        padding-bottom: 100px;
+    }
+
     .container {
         padding: 0 80px;
     }
@@ -116,6 +218,39 @@
 }
 
 @media (max-width: 1450px) {
+    .testimonial_item p {
+        font-size: 22px;
+    }
+
+    .authorimg {
+        height: 50px;
+        width: 50px;
+    }
+
+    .ourpropmise_title h4 {
+        font-size: 22px;
+    }
+
+    .ourclients-marquee .marquee-content {
+        min-width: auto;
+        min-height: auto;
+        max-width: 160px;
+    }
+
+    .greadientbox {
+        width: 160px;
+        height: 160px;
+    }
+
+    .overlayserviceimage {
+        right: 200px;
+        max-width: 370px;
+    }
+
+    .serviceslist_number {
+        padding-right: 80px;
+    }
+
     .turningmiddletitle h2 {
         font-size: 84px;
     }
@@ -152,6 +287,34 @@
 }
 
 @media (max-width: 1350px) {
+    .availableforwork .container {
+        padding: 100px 0;
+    }
+
+    .ourpropmise_title h4 {
+        margin: 50px 0 14px;
+    }
+
+    .ourpropmise_wrapper {
+        padding: 50px 0 0;
+    }
+
+    .ourpropmise_title h4 {
+        font-size: 20px;
+    }
+
+    .overlayserviceimage {
+        right: 170px;
+    }
+
+    .serviceslist_item {
+        margin: 0 0 30px;
+    }
+
+    .serviceslist_number {
+        padding-right: 60px;
+    }
+
     .turningmiddletitle h2 {
         font-size: 78px;
     }
@@ -177,8 +340,24 @@
         font-size: 120px;
     }
 
+    h2, .h2 {
+        font-size: 50px;
+    }
+
     p, .p {
         font-size: 20px;
+    }
+
+    .sec-padding {
+        padding: 80px 0;
+    }
+
+    .pt_120 {
+        padding-top: 80px;
+    }
+
+    .pb_120 {
+        padding-bottom: 80px;
     }
 
     .container {
@@ -219,6 +398,45 @@
 }
 
 @media (max-width: 1199px) {
+    .testimonial_item p {
+        font-size: 20px;
+    }
+
+    .testimonialwrap .marquee-flex {
+        gap: 100px;
+    }
+
+    .testimonialwrap .marquee-content {
+        max-width: 400px;
+    }
+
+    .testimonialauthor h3, .testimonialauthor span {
+        font-size: 16px;
+    }
+
+    .authorimg {
+        height: 45px;
+        width: 45px;
+    }
+
+    .ourpropmise_wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px 20px;
+    }
+
+    .ourpropmise_title h4 {
+        margin: 30px 0 14px;
+    }
+
+    .ourservices_title h2 br,
+    .ourpropmise_title h2 br {
+        display: none;
+    }
+
+    .ourclients-marquee .marquee-flex {
+        gap: 12px;
+    }
+
     .turningmiddletitle h2 {
         font-size: 70px;
     }
@@ -241,6 +459,22 @@
 
     .herosubtitle {
         font-size: 68px;
+    }
+
+    h2, .h2 {
+        font-size: 42px;
+    }
+
+    .sec-padding {
+        padding: 60px 0;
+    }
+
+    .pt_120 {
+        padding-top: 60px;
+    }
+
+    .pb_120 {
+        padding-bottom: 60px;
     }
 
     .container {
@@ -297,6 +531,22 @@
 }
 
 @media (max-width: 991px) {
+    .availableforwork .container {
+        padding: 80px 0;
+    }
+
+    .testimonialwrap .marquee-content {
+        max-width: 370px;
+    }
+
+    .testimonial_item p {
+        font-size: 18px;
+    }
+
+    .ourclients-wrapper.pt_120 {
+        padding-top: 20px;
+    }
+
     .turningmiddletitle h2 {
         font-size: 60px;
     }
@@ -318,16 +568,33 @@
         font-size: 56px;
     }
 
-    .ourpropmise_wrapper {
+    .footer_grid {
         grid-template-columns: 1fr;
     }
 
-    .footer_grid {
-        grid-template-columns: 1fr;
+    h2, .h2 {
+        font-size: 36px;
     }
 }
 
 @media (max-width: 768px) {
+    .availableforwork_title h2 {
+        margin: 14px 0 0;
+    }
+
+    .testimonial_item p {
+        margin: 0 0 30px;
+    }
+
+    .testimonialwrap .marquee-flex {
+        gap: 60px;
+    }
+
+    .ourpropmise_wrapper {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
     .turningmiddletitle h2 {
         font-size: 50px;
     }
@@ -390,6 +657,35 @@
 }
 
 @media (max-width: 575px) {
+    .availableforwork .container {
+        padding: 60px 16px;
+    }
+
+    .availableforwork_title h2 {
+        font-size: 30px;
+    }
+
+    .testimonial_item p {
+        line-height: 1.3em;
+    }
+
+    .ourservices_title h2, .ourclients_title h2, .ourpropmise_title h2 {
+        margin: 16px 0 0;
+    }
+
+    .greadientbox {
+        width: 60px;
+        height: 140px;
+    }
+
+    .ourclients-marquee .marquee-content {
+        max-width: 140px;
+    }
+
+    .ourclients-marquee .marquee-flex {
+        gap: 0;
+    }
+
     .turningsection {
         padding: 180px 0;
     }
@@ -456,6 +752,26 @@
 }
 
 @media (max-width: 380px) {
+    .availableforwork_title h2 {
+        font-size: 26px;
+    }
+
+    .testimonialwrap .marquee-content {
+        max-width: 320px;
+    }
+
+    h2, .h2 {
+        font-size: 30px;
+    }
+
+    .ourpropmise_wrapper {
+        gap: 40px;
+    }
+
+    .ourpropmise_title h4 {
+        margin: 20px 0 14px;
+    }
+
     .turningmiddletitle h2 {
         font-size: 45px;
     }
