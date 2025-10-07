@@ -32,6 +32,10 @@
 }
 
 @media (max-width: 1699px) {
+    .masktext_wrapper {
+        margin: 140px 0 0;
+    }
+
     .testimonialauthor h3, .testimonialauthor span {
         font-size: 18px;
     }
@@ -92,6 +96,10 @@
         font-size: 24px;
     }
 
+    footer .footerlinks {
+        font-size: 24px;
+    }
+
     .container {
         max-width: 100%;
         padding: 0 120px;
@@ -125,6 +133,10 @@
 }
 
 @media (max-width: 1600px) {
+    .footer_column {
+        gap: 28px;
+    }
+
     .availableforwork_title h2 {
         margin: 24px 0 0;
     }
@@ -271,6 +283,10 @@
         font-size: 22px;
     }
 
+    footer .footerlinks {
+        font-size: 22px;
+    }
+
     .primary-btn>span {
         border-radius: 14px;
         padding: 18px 18px;
@@ -287,6 +303,10 @@
 }
 
 @media (max-width: 1350px) {
+    ul.footer-links {
+        padding: 5px 0 0;
+    }
+
     .availableforwork .container {
         padding: 100px 0;
     }
@@ -348,6 +368,10 @@
         font-size: 20px;
     }
 
+    footer .footerlinks {
+        font-size: 20px;
+    }
+
     .sec-padding {
         padding: 80px 0;
     }
@@ -398,6 +422,14 @@
 }
 
 @media (max-width: 1199px) {
+    .footer_grid {
+        gap: 24px;
+    }
+
+    .footer_column {
+        gap: 16px;
+    }
+
     .testimonial_item p {
         font-size: 20px;
     }
@@ -531,8 +563,18 @@
 }
 
 @media (max-width: 991px) {
+    ul.footer-links {
+        padding: 0;
+        min-width: 100%;
+    }
+
+    .footer_column {
+        gap: 24px;
+        flex-direction: column;
+    }
+
     .availableforwork .container {
-        padding: 80px 0;
+        padding: 80px 16px;
     }
 
     .testimonialwrap .marquee-content {
@@ -566,10 +608,6 @@
 
     .herosubtitle {
         font-size: 56px;
-    }
-
-    .footer_grid {
-        grid-template-columns: 1fr;
     }
 
     h2, .h2 {
@@ -657,8 +695,18 @@
 }
 
 @media (max-width: 575px) {
-    .availableforwork .container {
-        padding: 60px 16px;
+    .mask_text {
+        font-size: 25vw;
+    }
+
+    .masktext_wrapper {
+        margin: 60px 0 0;
+        padding-bottom: 26px;
+    }
+
+    .footer_grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px 24px;
     }
 
     .availableforwork_title h2 {
@@ -752,6 +800,10 @@
 }
 
 @media (max-width: 380px) {
+    .footer_grid {
+        grid-template-columns: 1fr;
+    }
+
     .availableforwork_title h2 {
         font-size: 26px;
     }
