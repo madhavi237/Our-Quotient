@@ -15,6 +15,14 @@
 }
 
 @media (max-width: 1699px) {
+    .turningmiddletitle h2 {
+        font-size: 100px;
+    }
+
+    .turningsection {
+        padding: 240px 0;
+    }
+
     .aboutussection .marquee {
         margin: 100px 0 0;
     }
@@ -60,6 +68,10 @@
 }
 
 @media (max-width: 1600px) {
+    .turningsection {
+        padding: 200px 0;
+    }
+
     .icon-union:before {
         font-size: 14px;
     }
@@ -104,6 +116,10 @@
 }
 
 @media (max-width: 1450px) {
+    .turningmiddletitle h2 {
+        font-size: 84px;
+    }
+
     .marqueetext {
         line-height: 9rem;
     }
@@ -136,6 +152,10 @@
 }
 
 @media (max-width: 1350px) {
+    .turningmiddletitle h2 {
+        font-size: 78px;
+    }
+
     .subtitle {
         font-size: 18px;
         padding: 5px 0 0 0;
@@ -199,6 +219,10 @@
 }
 
 @media (max-width: 1199px) {
+    .turningmiddletitle h2 {
+        font-size: 70px;
+    }
+
     .abouts_left {
         max-width: 38%;
     }
@@ -273,6 +297,10 @@
 }
 
 @media (max-width: 991px) {
+    .turningmiddletitle h2 {
+        font-size: 60px;
+    }
+
     .aboutus_row {
         flex-direction: column;
     }
@@ -300,6 +328,10 @@
 }
 
 @media (max-width: 768px) {
+    .turningmiddletitle h2 {
+        font-size: 50px;
+    }
+
     .abouts_left {
         max-width: 100%;
     }
@@ -358,6 +390,14 @@
 }
 
 @media (max-width: 575px) {
+    .turningsection {
+        padding: 180px 0;
+    }
+
+    .turningmiddletitle h2 br {
+        display: none;
+    }
+
     .marqueetext {
         line-height: 4rem;
     }
@@ -416,6 +456,10 @@
 }
 
 @media (max-width: 380px) {
+    .turningmiddletitle h2 {
+        font-size: 45px;
+    }
+
     .marqueetext {
         font-size: 60px;
     }
