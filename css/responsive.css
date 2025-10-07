@@ -696,12 +696,12 @@
 
 @media (max-width: 575px) {
     .mask_text {
-        font-size: 25vw;
+        font-size: 23vw;
     }
 
     .masktext_wrapper {
         margin: 60px 0 0;
-        padding-bottom: 26px;
+        padding: 0 16px 26px;
     }
 
     .footer_grid {
