@@ -262,7 +262,7 @@
     .herosection {
         align-items: center;
         text-align: center;
-        padding: 80px 0 0;
+        padding: 0
     }
 
     .bg_video {
@@ -276,7 +276,9 @@
     .bg_video {
         left: 0;
         bottom: 0;
-        top: auto;
+        top: 50%;
+        height: 85vh;
+        transform: translateY(-50%);
     }
 
     .herotitle {
@@ -325,11 +327,9 @@
 }
 
 @media (max-width: 380px) {
-    /* .bg_video {
-        left: 6rem;
-        bottom: 0;
-        height: 80vh;
-    } */
+    .bg_video {
+        height: 75vh;
+    }
 
     .herosubtitle {
         font-size: 36px;
