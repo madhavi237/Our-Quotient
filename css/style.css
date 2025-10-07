@@ -543,6 +543,7 @@ header {
 
 .bg_video {
     position: absolute;
+    z-index: 2;
     top: -48.5rem;
     left: 34.5rem;
     mix-blend-mode: color-dodge;
@@ -965,6 +966,8 @@ header {
 .herosection.bgpattern::before {
     background-image: url('../images/background-pattern1.svg');
     inset: -60% 0 0 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .workwedo_sec.bgpattern::before {
