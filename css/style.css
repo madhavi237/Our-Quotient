@@ -746,10 +746,6 @@ header {
     -o-transition: all 0.4s ease;
 }
 
-.serviceslist_item:last-child {
-    margin: 0 0 0;
-}
-
 .serviceslist_content h3 {
     font-weight: normal;
     margin: 0 0 24px;
@@ -787,9 +783,6 @@ header {
     padding-top: 0;
 }
 
-.serviceslist_item:last-child .listinner {
-    padding-bottom: 0;
-}
 
 .serviceslist_number {
     padding-right: 156px;

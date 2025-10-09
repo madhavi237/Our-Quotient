@@ -449,6 +449,15 @@
 }
 
 @media (max-width: 1199px) {
+
+    .serviceslist_item:last-child .listinner {
+        padding-bottom: 0;
+    }
+
+    .serviceslist_item:last-child {
+        margin: 0 0 0;
+    }
+
     .workwedo_arrow .icon-white-arrow {
         width: 72px;
         height: 72px;
