@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-// Word reveal animation on viewport
+// Turning Uncertainty Into Your Next Opportunity ---on viewport
 document.addEventListener("DOMContentLoaded", function () {
     const section = document.querySelector('.bg_overlay_animate');
     const h2 = document.querySelector('.turningmiddletitle h2');
@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const viewportCenter = window.innerHeight / 2;
         const inCenter = Math.abs(sectionCenter - viewportCenter) < rect.height / 2;
 
-        // --- Overlay enter/leave ---
+        // ---Overlay enter/leave--- 
         if (inCenter) {
             section.classList.add('enter');
             section.classList.remove('leave');
@@ -139,7 +139,6 @@ document.addEventListener("DOMContentLoaded", function () {
             section.classList.remove('enter');
             section.classList.add('leave');
 
-            // Reset word reveal
             clearTimeout(wordsTimeout);
             if (wordsAnimated) {
                 resetAnimation();
