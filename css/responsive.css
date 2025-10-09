@@ -1,4 +1,8 @@
 @media (max-width: 1850px) {
+    .workwedo_middletext h2 {
+        font-size: 14rem;
+    }
+
     .authorimg {
         height: 55px;
         width: 55px;
@@ -32,6 +36,11 @@
 }
 
 @media (max-width: 1699px) {
+    .workwedo_arrow .icon-white-arrow {
+        width: 120px;
+        height: 120px;
+    }
+
     .masktext_wrapper {
         margin: 140px 0 0;
     }
@@ -133,6 +142,15 @@
 }
 
 @media (max-width: 1600px) {
+    .workwedo_middletext h2 {
+        font-size: 12rem;
+    }
+
+    .workwedo_arrow .icon-white-arrow {
+        width: 100px;
+        height: 100px;
+    }
+
     .footer_column {
         gap: 28px;
     }
@@ -303,6 +321,15 @@
 }
 
 @media (max-width: 1350px) {
+    .workwedo_middletext h2 {
+        font-size: 11rem;
+    }
+
+    .workwedo_arrow .icon-white-arrow {
+        width: 88px;
+        height: 88px;
+    }
+
     ul.footer-links {
         padding: 5px 0 0;
     }
@@ -422,6 +449,11 @@
 }
 
 @media (max-width: 1199px) {
+    .workwedo_arrow .icon-white-arrow {
+        width: 72px;
+        height: 72px;
+    }
+
     .overlayserviceimage {
         position: static;
         opacity: 1;
@@ -770,6 +802,10 @@
 }
 
 @media (max-width: 575px) {
+    .listinner {
+        align-items: start;
+    }
+
     .icon-white-arrow:before {
         font-size: 22px;
     }
@@ -883,6 +919,26 @@
 }
 
 @media (max-width: 380px) {
+    .serviceslist_item {
+        margin: 0;
+    }
+
+    .servicearrow {
+        padding: 6px 0 0;
+    }
+
+    .serviceslist_number {
+        display: none;
+    }
+
+    .icon-white-arrow:before {
+        font-size: 18px;
+    }
+
+    .serviceslist_content {
+        max-width: 88%;
+    }
+
     .serviceslist_content p {
         font-size: 16px;
         line-height: 1.2;

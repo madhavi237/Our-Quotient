@@ -783,6 +783,14 @@ header {
     padding: 20px 0;
 }
 
+.serviceslist_item:first-child .listinner {
+    padding-top: 0;
+}
+
+.serviceslist_item:last-child .listinner {
+    padding-bottom: 0;
+}
+
 .serviceslist_number {
     padding-right: 156px;
     margin-bottom: auto;
@@ -929,7 +937,6 @@ header {
 .workwedo_sec {
     position: relative;
     z-index: 1;
-    min-height: 980px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -970,7 +977,7 @@ header {
 
 .workwedo_sec.bgpattern::before {
     background-image: url('../images/background-pattern2.svg');
-    background-position: center 26%;
+    background-position: center;
     background-size: 100%;
 }
 
@@ -987,6 +994,8 @@ footer.bgpattern::before {
 }
 
 .workwedo_box {
+    aspect-ratio: 480 / 327;
+    max-height: 327px;
     position: relative;
     z-index: 4;
     overflow: hidden;
@@ -1003,9 +1012,11 @@ footer.bgpattern::before {
 }
 
 .workwedo_img {
-    aspect-ratio: 480/327;
-    max-height: 327px;
-    /* width: 100%; */
+    height: 100%;
+    width: 100%;
+    /* aspect-ratio: 480/327; */
+    /* max-height: 327px; */
+    /* min-height: 327px; */
 }
 
 .workwedo_img img {
