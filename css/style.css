@@ -695,10 +695,60 @@ header {
     margin: 120px 0 0;
 }
 
-.turningsection {
+.bg_overlay_animate {
     overflow: hidden;
+    position: relative;
+    background-color: var(--Blue);
+}
+
+.bg_overlay_animate::before {
+    content: '';
+    background-color: var(--white);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform: translateY(-100%);
+    transition: transform 1.2s cubic-bezier(0.65, 0, 0.35, 1);
+    -webkit-transition: transform 1.2s cubic-bezier(0.65, 0, 0.35, 1);
+    -moz-transition: transform 1.2s cubic-bezier(0.65, 0, 0.35, 1);
+    -ms-transition: transform 1.2s cubic-bezier(0.65, 0, 0.35, 1);
+    -o-transition: transform 1.2s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.bg_overlay_animate.enter::before {
+    transform: translateY(0);
+}
+
+.bg_overlay_animate.leave::before {
+    transform: translateY(100%);
+}
+
+.bg_overlay_animate.onviewport::before {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+
+.bg_overlay_animate.enter h2 {
+    color: var(--Blue);
+}
+
+.bg_overlay_animate h2 {
+    color: var(--white);
+    transition: color 1.2s ease;
+    -webkit-transition: color 1.2s ease;
+    -moz-transition: color 1.2s ease;
+    -ms-transition: color 1.2s ease;
+    -o-transition: color 1.2s ease;
+}
+
+.turningsection {
     padding: 280px 0;
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
 .turningmiddletitle h2 {
@@ -707,6 +757,11 @@ header {
     font-size: 120px;
     text-transform: capitalize;
     font-weight: normal;
+}
+
+.turningmiddletitle span.active {
+    font-family: 'NeueMontreal Medium';
+    font-style: italic;
 }
 
 .ourservices {
@@ -778,11 +833,6 @@ header {
     flex-wrap: wrap;
     padding: 20px 0;
 }
-
-.serviceslist_item:first-child .listinner {
-    padding-top: 0;
-}
-
 
 .serviceslist_number {
     padding-right: 156px;
@@ -1104,6 +1154,89 @@ footer.bgpattern::before {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 32px;
+}
+
+/* .ourpropmise_wrapper .ourpropmise_item:nth-of-type(2) {
+    transform: translateX(6rem);
+    -webkit-transform: translateX(6rem);
+    -moz-transform: translateX(6rem);
+    -ms-transform: translateX(6rem);
+    -o-transform: translateX(6rem);
+}
+
+.ourpropmise_wrapper .ourpropmise_item:nth-of-type(3) {
+    transform: translateX(12rem);
+    -webkit-transform: translateX(12rem);
+    -moz-transform: translateX(12rem);
+    -ms-transform: translateX(12rem);
+    -o-transform: translateX(12rem);
+}
+
+.ourpropmise_wrapper .ourpropmise_item:nth-of-type(4) {
+    transform: translateX(24rem);
+    -webkit-transform: translateX(24rem);
+    -moz-transform: translateX(24rem);
+    -ms-transform: translateX(24rem);
+    -o-transform: translateX(24rem);
+} */
+
+.ourpropmise_item {
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    -webkit-transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    -moz-transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    -ms-transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    -o-transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.ourpropmise_item:nth-child(2) {
+    transform: translateX(132px);
+    -webkit-transform: translateX(132px);
+    -moz-transform: translateX(132px);
+    -ms-transform: translateX(132px);
+    -o-transform: translateX(132px);
+}
+
+.ourpropmise_item:nth-child(3) {
+    transform: translateX(230px);
+    -webkit-transform: translateX(230px);
+    -moz-transform: translateX(230px);
+    -ms-transform: translateX(230px);
+    -o-transform: translateX(230px);
+}
+
+.ourpropmise_item:nth-child(4) {
+    transform: translateX(330px);
+    -webkit-transform: translateX(330px);
+    -moz-transform: translateX(330px);
+    -ms-transform: translateX(330px);
+    -o-transform: translateX(330px);
+}
+
+.ourpropmise_wrapper.active .ourpropmise_item:nth-child(2) {
+    animation-delay: 0.6s;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+
+.ourpropmise_wrapper.active .ourpropmise_item:nth-child(3) {
+    animation-delay: 0.8s;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+
+.ourpropmise_wrapper.active .ourpropmise_item:nth-child(4) {
+    animation-delay: 0.10s;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
 }
 
 .ourpropmise_item h3 {

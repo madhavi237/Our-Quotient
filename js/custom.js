@@ -41,15 +41,118 @@ document.addEventListener("DOMContentLoaded", function () {
         new Swiper(WorkWeDoSlider, {
             slidesPerView: "auto",
             loop: true,
-            loopedSlides: 10,
-            freeModeMomentum: false,
             freeMode: true,
             speed: 5000,
             autoplay: {
                 delay: 0,
-                disableOnInteraction: false,
             },
-            freeModeMomentum: false,
         });
     }
 });
+
+
+// SlideInRight 
+document.addEventListener("DOMContentLoaded", function () {
+    const wrapper = document.querySelector(".ourpropmise_wrapper");
+
+    if (!wrapper) return;
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    wrapper.classList.add("active");
+                } else {
+                    wrapper.classList.remove("active");
+                }
+            });
+        },
+        {
+            threshold: 0.3,
+        }
+    );
+
+    observer.observe(wrapper);
+});
+
+
+
+// Word reveal animation on viewport
+document.addEventListener("DOMContentLoaded", function () {
+    const section = document.querySelector('.bg_overlay_animate');
+    const h2 = document.querySelector('.turningmiddletitle h2');
+    const text = h2.innerHTML;
+
+    // Split text into spans for word reveal
+    const parts = text.split(/(<br>|\s+)/);
+    h2.innerHTML = '';
+    parts.forEach(part => {
+        if (part === '<br>') {
+            h2.appendChild(document.createElement('br'));
+        } else if (part.trim() !== '') {
+            const span = document.createElement('span');
+            span.textContent = part;
+            h2.appendChild(span);
+        } else {
+            h2.appendChild(document.createTextNode(part));
+        }
+    });
+
+    function animateWords() {
+        const spans = h2.querySelectorAll('span');
+        spans.forEach((span, i) => {
+            setTimeout(() => {
+                span.classList.add('active');
+            }, i * 180);
+        });
+    }
+
+    function resetAnimation() {
+        const spans = h2.querySelectorAll('span');
+        spans.forEach(span => span.classList.remove('active'));
+    }
+
+    let wordsTimeout = null;
+    let wordsAnimated = false;
+
+    function checkAnimations() {
+        const rect = section.getBoundingClientRect();
+        const sectionCenter = rect.top + rect.height / 2;
+        const viewportCenter = window.innerHeight / 2;
+        const inCenter = Math.abs(sectionCenter - viewportCenter) < rect.height / 2;
+
+        // --- Overlay enter/leave ---
+        if (inCenter) {
+            section.classList.add('enter');
+            section.classList.remove('leave');
+
+            // Start word reveal after overlay animation duration
+            if (!wordsAnimated) {
+                clearTimeout(wordsTimeout);
+                wordsTimeout = setTimeout(() => {
+                    animateWords();
+                    wordsAnimated = true;
+                }, 200); // matches overlay CSS transition duration
+            }
+
+        } else {
+            section.classList.remove('enter');
+            section.classList.add('leave');
+
+            // Reset word reveal
+            clearTimeout(wordsTimeout);
+            if (wordsAnimated) {
+                resetAnimation();
+                wordsAnimated = false;
+            }
+        }
+    }
+
+    // Initial check
+    checkAnimations();
+
+    // Listen to scroll and resize
+    window.addEventListener('scroll', checkAnimations);
+    window.addEventListener('resize', checkAnimations);
+});
+

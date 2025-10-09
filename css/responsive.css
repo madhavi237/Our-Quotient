@@ -503,6 +503,10 @@
         height: 66px;
     }
 
+    .serviceslist_item:first-child .listinner {
+        padding-top: 0;
+    }
+
     .serviceslist_item:last-child .listinner {
         padding-bottom: 0;
     }
@@ -886,6 +890,10 @@
 }
 
 @media (max-width: 575px) {
+    .ourpropmise_item h3 {
+        opacity: 0.5;
+    }
+
     .workwedo_box {
         max-height: 200px;
     }
