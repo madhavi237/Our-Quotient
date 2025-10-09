@@ -31,3 +31,25 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+
+// WorkWeDo slider - only for <768
+document.addEventListener("DOMContentLoaded", function () {
+    const WorkWeDoSlider = document.querySelector(".WorkWeDo");
+
+    if (WorkWeDoSlider && window.innerWidth < 768) {
+        new Swiper(WorkWeDoSlider, {
+            slidesPerView: "auto",
+            loop: true,
+            loopedSlides: 10,
+            freeModeMomentum: false,
+            freeMode: true,
+            speed: 5000,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
+            },
+            freeModeMomentum: false,
+        });
+    }
+});

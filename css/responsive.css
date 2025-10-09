@@ -449,6 +449,59 @@
 }
 
 @media (max-width: 1199px) {
+    .workwedo_wrapper {
+        gap: 16px;
+    }
+
+    .workwedo_box,
+    .workwedo_arrow .icon-white-arrow {
+        opacity: 1;
+    }
+
+    .WorkWeDo {
+        flex-direction: column;
+        flex-flow: column-reverse;
+        gap: 50px;
+    }
+
+    .workwedo_middletext {
+        position: static;
+    }
+
+    .workwedo_middletext h2 {
+        font-size: 8rem;
+        line-height: 1;
+    }
+
+    .workwedo_box:hover .workwedo_img img {
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+    }
+
+    .workwedo_arrow .icon-white-arrow {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+
+    .workwedo_box .icon-white-arrow:before {
+        font-size: 20px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+    }
+
+    .workwedo_arrow .icon-white-arrow {
+        width: 66px;
+        height: 66px;
+    }
 
     .serviceslist_item:last-child .listinner {
         padding-bottom: 0;
@@ -456,11 +509,6 @@
 
     .serviceslist_item:last-child {
         margin: 0 0 0;
-    }
-
-    .workwedo_arrow .icon-white-arrow {
-        width: 72px;
-        height: 72px;
     }
 
     .overlayserviceimage {
@@ -636,6 +684,10 @@
 }
 
 @media (max-width: 1024px) {
+    .workwedo_middletext h2 {
+        font-size: 7rem;
+    }
+
     .abouts_left {
         max-width: 30%;
     }
@@ -667,6 +719,10 @@
 }
 
 @media (max-width: 991px) {
+    .workwedo_middletext h2 {
+        font-size: 5rem;
+    }
+
     .serviceslist_number {
         padding-right: 30px;
     }
@@ -728,6 +784,25 @@
 }
 
 @media (max-width: 768px) {
+    .workwedo_sec {
+        padding-bottom: 60px;
+    }
+
+    .workwedo_sec.bgpattern::before {
+        background-size: cover;
+    }
+
+    .workwedo_wrapper {
+        display: flex;
+        /* animation: marquee-animate 40s linear infinite;
+        -webkit-animation: marquee-animate 40s linear infinite; */
+    }
+
+    .workwedo_box {
+        max-width: 300px;
+        max-height: 200px;
+    }
+
     .serviceslist_item {
         margin: 0 0 10px;
     }
@@ -811,6 +886,14 @@
 }
 
 @media (max-width: 575px) {
+    .workwedo_box {
+        max-height: 200px;
+    }
+
+    .workwedo_middletext h2 {
+        font-size: 3.6rem;
+    }
+
     .listinner {
         align-items: start;
     }
@@ -928,6 +1011,10 @@
 }
 
 @media (max-width: 380px) {
+    .workwedo_middletext h2 {
+        font-size: 3rem;
+    }
+
     .serviceslist_item {
         margin: 0;
     }

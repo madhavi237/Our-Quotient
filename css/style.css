@@ -927,7 +927,7 @@ header {
     background: linear-gradient(to left, rgba(29, 45, 87, 1)0%, rgba(29, 45, 87, 0) 100%);
 }
 
-.workwedo_sec {
+.WorkWeDo {
     position: relative;
     z-index: 1;
     display: flex;
@@ -979,6 +979,11 @@ footer.bgpattern::before {
     inset: 0 0 0 0;
     opacity: 1;
     background-size: cover;
+}
+
+.workwedo_sec {
+    position: relative;
+    z-index: 1;
 }
 
 .workwedo_wrapper {
