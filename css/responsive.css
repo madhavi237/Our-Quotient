@@ -449,6 +449,20 @@
 }
 
 @media (max-width: 1199px) {
+
+    .ourpropmise_wrapper.active .ourpropmise_item:nth-child(2),
+    .ourpropmise_wrapper.active .ourpropmise_item:nth-child(3),
+    .ourpropmise_wrapper.active .ourpropmise_item:nth-child(4),
+    .ourpropmise_wrapper .ourpropmise_item:nth-child(2),
+    .ourpropmise_wrapper .ourpropmise_item:nth-child(3),
+    .ourpropmise_wrapper .ourpropmise_item:nth-child(4) {
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+    }
+
     .workwedo_wrapper {
         gap: 16px;
     }
@@ -1082,7 +1096,7 @@
     }
 
     .turningmiddletitle h2 {
-        font-size: 45px;
+        font-size: 50px;
     }
 
     .marqueetext {
