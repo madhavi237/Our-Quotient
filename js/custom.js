@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Function to split words and handle <br> for mobile/desktop
     function splitWords() {
-        const isMobile = window.innerWidth <= 768; // mobile breakpoint
+        const isMobile = window.innerWidth <= 575; // mobile breakpoint
         let processedText = isMobile ? originalText.replace(/<br\s*\/?>/gi, ' ') : originalText;
 
         const parts = processedText.split(/(\s+)/); // split by spaces, keep spaces
