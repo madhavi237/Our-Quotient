@@ -828,10 +828,6 @@
         gap: 50px;
     }
 
-    .turningmiddletitle h2 {
-        font-size: 50px;
-    }
-
     .abouts_left {
         max-width: 100%;
     }
@@ -890,6 +886,10 @@
 }
 
 @media (max-width: 575px) {
+    .ourservices::before {
+        background-size: 204%;
+    }
+
     .ourpropmise_item h3 {
         opacity: 0.5;
     }

@@ -81,23 +81,33 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     const section = document.querySelector('.bg_overlay_animate');
     const h2 = document.querySelector('.turningmiddletitle h2');
-    const text = h2.innerHTML;
+    const originalText = h2.innerHTML; // store original text with <br>
 
-    // Split text into spans for word reveal
-    const parts = text.split(/(<br>|\s+)/);
-    h2.innerHTML = '';
-    parts.forEach(part => {
-        if (part === '<br>') {
-            h2.appendChild(document.createElement('br'));
-        } else if (part.trim() !== '') {
-            const span = document.createElement('span');
-            span.textContent = part;
-            h2.appendChild(span);
-        } else {
-            h2.appendChild(document.createTextNode(part));
-        }
-    });
+    let wordsTimeout = null;
+    let wordsAnimated = false;
 
+    // Function to split words and handle <br> for mobile/desktop
+    function splitWords() {
+        const isMobile = window.innerWidth <= 768; // mobile breakpoint
+        let processedText = isMobile ? originalText.replace(/<br\s*\/?>/gi, ' ') : originalText;
+
+        const parts = processedText.split(/(\s+)/); // split by spaces, keep spaces
+        h2.innerHTML = '';
+
+        parts.forEach(part => {
+            if (!isMobile && part === '<br>') {
+                h2.appendChild(document.createElement('br'));
+            } else if (part.trim() !== '') {
+                const span = document.createElement('span');
+                span.textContent = part;
+                h2.appendChild(span);
+            } else {
+                h2.appendChild(document.createTextNode(part));
+            }
+        });
+    }
+
+    // Word reveal functions
     function animateWords() {
         const spans = h2.querySelectorAll('span');
         spans.forEach((span, i) => {
@@ -112,16 +122,14 @@ document.addEventListener("DOMContentLoaded", function () {
         spans.forEach(span => span.classList.remove('active'));
     }
 
-    let wordsTimeout = null;
-    let wordsAnimated = false;
-
+    // Overlay + word animation based on section center
     function checkAnimations() {
         const rect = section.getBoundingClientRect();
         const sectionCenter = rect.top + rect.height / 2;
         const viewportCenter = window.innerHeight / 2;
         const inCenter = Math.abs(sectionCenter - viewportCenter) < rect.height / 2;
 
-        // ---Overlay enter/leave--- 
+        // --- Overlay enter/leave ---
         if (inCenter) {
             section.classList.add('enter');
             section.classList.remove('leave');
@@ -132,9 +140,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 wordsTimeout = setTimeout(() => {
                     animateWords();
                     wordsAnimated = true;
-                }, 200); // matches overlay CSS transition duration
+                }, 200); // match overlay transition duration
             }
-
         } else {
             section.classList.remove('enter');
             section.classList.add('leave');
@@ -147,11 +154,15 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Initial check
+    // Initial setup
+    splitWords();
     checkAnimations();
 
     // Listen to scroll and resize
     window.addEventListener('scroll', checkAnimations);
-    window.addEventListener('resize', checkAnimations);
+    window.addEventListener('resize', () => {
+        splitWords(); // re-split on resize for mobile/desktop
+        checkAnimations();
+    });
 });
 
