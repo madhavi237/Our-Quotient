@@ -300,6 +300,10 @@ li {
     padding: 0 16px;
 }
 
+span.swipetext span {
+    display: block;
+}
+
 .sec-padding {
     padding: 120px 0;
 }
