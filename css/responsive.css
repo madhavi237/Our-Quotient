@@ -931,6 +931,11 @@
         opacity: 0.3;
     }
 
+    .primary-menu-container::before {
+        opacity: 0.3;
+        background-size: cover;
+    }
+
     .testimonial_sec .bg_video {
         width: 14.0625rem;
         top: 4rem;
