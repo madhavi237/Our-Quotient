@@ -305,8 +305,6 @@ span.swipetext span {
     margin-left: -15px;
 }
 
-
-
 .sec-padding {
     padding: 120px 0;
 }
@@ -606,6 +604,7 @@ header {
 
 .swipetext {
     font-style: italic;
+    display: inline-block;
 }
 
 .swipetext span:nth-child(1) {
