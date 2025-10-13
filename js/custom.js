@@ -42,13 +42,16 @@ document.addEventListener("DOMContentLoaded", function () {
             slidesPerView: "auto",
             loop: true,
             freeMode: true,
+            freeModeMomentum: false,
             speed: 5000,
             autoplay: {
-                delay: 0,
+                delay: 0, // continuous autoplay
+                disableOnInteraction: false, // keeps moving after user interaction
             },
         });
     }
 });
+
 
 
 // SlideInRight 
