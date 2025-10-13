@@ -889,8 +889,10 @@
     }
 
     .herosection.bgpattern::before {
-        transform: scale(2);
+        /* transform: scale(2);
+        opacity: 0.5; */
         opacity: 0.3;
+        background-size: cover;
     }
 
     .herosectiontitle {
@@ -932,8 +934,10 @@
     }
 
     .primary-menu-container::before {
+        background-position: left;
         opacity: 0.3;
         background-size: cover;
+        transform: scale(1.6);
     }
 
     .testimonial_sec .bg_video {
@@ -1034,12 +1038,18 @@
         transform: translateY(-50%); */
     }
 
+    .bg_video {
+        top: auto;
+        bottom: 0;
+        right: -3rem;
+    }
+
     .herotitle {
         font-size: 60px;
     }
 
     .herosubtitle {
-        font-size: 40px;
+        font-size: 45px;
     }
 
     .container {
