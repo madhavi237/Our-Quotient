@@ -328,6 +328,11 @@
 }
 
 @media (max-width: 1350px) {
+    .testimonial_sec .bg_video {
+        width: 24.0625rem;
+        right: -4rem;
+    }
+
     .bg_video {
         top: -10.5rem;
         right: -9rem;
@@ -715,6 +720,11 @@
 }
 
 @media (max-width: 1024px) {
+    .testimonial_sec .bg_video {
+        width: 20.0625rem;
+        right: -3rem;
+    }
+
     .workwedo_middletext h2 {
         font-size: 7rem;
     }
@@ -746,6 +756,11 @@
 }
 
 @media (max-width: 991px) {
+    .testimonial_sec .bg_video {
+        width: 16.0625rem;
+        right: -2rem;
+    }
+
     .workwedo_middletext h2 {
         font-size: 5rem;
     }
@@ -911,6 +926,17 @@
 }
 
 @media (max-width: 575px) {
+    footer.bgpattern::before {
+        background-image: url('../images/mobilepattern.svg');
+        opacity: 0.3;
+    }
+
+    .testimonial_sec .bg_video {
+        width: 14.0625rem;
+        top: 4rem;
+        right: -2rem;
+    }
+
     .bg_video {
         max-width: 74%;
         top: 2rem;
@@ -923,7 +949,7 @@
 
     .ourservices::before {
         background-size: 204%;
-    }   
+    }
 
     .workwedo_box {
         max-height: 200px;
@@ -1049,6 +1075,12 @@
 }
 
 @media (max-width: 380px) {
+    .testimonial_sec .bg_video {
+        width: 11.0625rem;
+        top: 3rem;
+        right: -1.5rem;
+    }
+
     .bg_video {
         max-width: 100%;
     }
