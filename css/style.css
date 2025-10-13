@@ -132,7 +132,7 @@ html {
 :root {
     --black: #000000;
     --white: #fff;
-    --Blue: #1D2D57;
+    --Blue: #1e3361;
     --Yellow: #ECCE4B;
     --Pink: #E05F98;
     --Orange: #F39920;
@@ -1598,4 +1598,23 @@ ul.footer-links {
     -moz-transition: color 0.4s ease;
     -ms-transition: color 0.4s ease;
     -o-transition: color 0.4s ease;
+}
+
+.white_bg.in-reveal .subtitle,
+.white_bg.in-reveal .icon-union:before {
+    color: var(--Blue);
+    transition: color 0.4s ease;
+    -webkit-transition: color 0.4s ease;
+    -moz-transition: color 0.4s ease;
+    -ms-transition: color 0.4s ease;
+    -o-transition: color 0.4s ease;
+}
+
+.white_bg.in-reveal.active .subtitle,
+.white_bg.in-reveal.active .icon-union:before {
+    color: var(--white);
+}
+
+.white_bg.in-reveal.active {
+    background-color: var(--Blue);
 }
