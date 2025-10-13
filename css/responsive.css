@@ -296,10 +296,6 @@
         font-size: 84px;
     }
 
-    .marqueetext {
-        line-height: 9rem;
-    }
-
     .herosubtitle {
         font-size: 88px;
     }
@@ -573,7 +569,7 @@
     }
 
     .serviceslist_item:hover {
-        background-color: var(--Blue);
+        background-color: transparent;
     }
 
     .serviceslist_item:hover .serviceslist_number>span,
@@ -666,10 +662,6 @@
 
     .abouts_left {
         max-width: 38%;
-    }
-
-    .marqueetext {
-        line-height: 6rem;
     }
 
     .aboutussection {
@@ -931,11 +923,7 @@
 
     .ourservices::before {
         background-size: 204%;
-    }
-
-    .ourpropmise_item h3 {
-        opacity: 0.5;
-    }
+    }   
 
     .workwedo_box {
         max-height: 200px;
@@ -1005,10 +993,6 @@
 
     .turningmiddletitle h2 br {
         display: none;
-    }
-
-    .marqueetext {
-        line-height: 4rem;
     }
 
     .bg_video {

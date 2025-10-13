@@ -731,7 +731,7 @@ header {
 /* end */
 .marqueetext {
     font-size: clamp(70px, 12.5vw, 240px);
-    line-height: 12rem;
+    /* line-height: 12rem; */
     text-transform: uppercase;
     color: var(--white);
 }
@@ -816,7 +816,28 @@ header {
     overflow: hidden;
 }
 
-.ourservices::before {
+.serviceslist_wrapper {
+    position: relative;
+}
+
+.bg_video.inbackground {
+    position: absolute;
+    content: '';
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    margin: 0 auto;
+}
+
+/* .ourservices::before {
     position: absolute;
     content: '';
     background-image: url(../images/background-video.gif);
@@ -828,7 +849,7 @@ header {
     background-size: 100%;
     background-position: center;
     z-index: -1;
-}
+} */
 
 .ourservices_title h2,
 .ourclients_title h2,
@@ -880,29 +901,29 @@ header {
     padding: 20px 0;
 }
 
-.serviceslist_item:nth-child(1):hover .serviceslist_content h3,
-.serviceslist_item:nth-child(1):hover .serviceslist_number>span,
-.serviceslist_item:nth-child(1):hover .icon-white-arrow:before {
+.serviceslist_item:nth-child(3n-1):hover .serviceslist_content h3,
+.serviceslist_item:nth-child(3n-1):hover .serviceslist_number>span,
+.serviceslist_item:nth-child(3n-1):hover .icon-white-arrow:before {
     color: var(--Orange);
 }
 
-.serviceslist_item:nth-child(2):hover .serviceslist_content h3,
-.serviceslist_item:nth-child(2):hover .serviceslist_number>span,
-.serviceslist_item:nth-child(2):hover .icon-white-arrow:before {
+.serviceslist_item:nth-child(3n-2):hover .serviceslist_content h3,
+.serviceslist_item:nth-child(3n-2):hover .serviceslist_number>span,
+.serviceslist_item:nth-child(3n-2):hover .icon-white-arrow:before {
     color: var(--Pink);
 }
 
-.serviceslist_item:nth-child(3):hover .serviceslist_content h3,
-.serviceslist_item:nth-child(3):hover .serviceslist_number>span,
-.serviceslist_item:nth-child(3):hover .icon-white-arrow:before {
-    color: var(--Grey);
+.serviceslist_item:nth-child(3n-3):hover .serviceslist_content h3,
+.serviceslist_item:nth-child(3n-3):hover .serviceslist_number>span,
+.serviceslist_item:nth-child(3n-3):hover .icon-white-arrow:before {
+    color: var(--Yellow);
 }
-
+/* 
 .serviceslist_item:nth-child(4):hover .serviceslist_content h3,
 .serviceslist_item:nth-child(4):hover .serviceslist_number>span,
 .serviceslist_item:nth-child(4):hover .icon-white-arrow:before {
-    color: var(--Yellow);
-}
+    color: var(--Grey);
+} */
 
 
 .serviceslist_number {
