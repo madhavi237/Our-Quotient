@@ -66,20 +66,17 @@
         <section class="herosection bgpattern">
             <!-- <img src="./images/background-video.gif" alt="background video" class="bg_video"> -->
             <video class="player video-thumbnail bg_video" autoplay muted loop playsinline>
-                <source src="./images/background-video-latest.mp4" type="video/mp4">
+                <source src="https://morphicinfotech.com/royalchain/qlogoanimated.mp4" type="video/mp4">
             </video>
 
             <div class="grouptitlewrap">
                 <div class="container">
                     <div class="herosectiontitle">
-                        <span class="herosubtitle">We Build Digital</span>
-                        <h1 class="herotitle">World
+                        <h1 class="herotitle">
+                            <span class="herosubtitle">We Help Brands</span>
                             <span class="height_container">
-                                <span class="swipetext">
-                                    <span>Engaging</span>
-                                    <span>Captivating</span>
-                                    <span>Dynamic</span>
-                                    <span>Engaging</span>
+                                <span class="swipetext" id="typed">
+                                    
                                 </span>
                             </span>
                         </h1>
@@ -108,7 +105,7 @@
             <div class="marquee overflow-hidden">
                 <div class="marquee-flex">
                     <div class="marquee-content">
-                        <span class="marqueetext">effective digital ecosystems</span>
+                        <span class="marqueetext">Digital, de-complicated. Digital, de-complicated. Digital, de-complicated.</span>
                     </div>
                 </div>
             </div>
@@ -118,7 +115,7 @@
             <div class="turningsection">
                 <div class="container">
                     <div class="turningmiddletitle">
-                        <h2>Turning Uncertainty Into <br> Your Next Opportunity</h2>
+                        <h2>Healing bad briefs<br> since day one. </h2>
                     </div>
                 </div>
             </div>
@@ -131,7 +128,7 @@
                         <span class="icon-union union"></span>
                         <span class="subtitle">Our Services</span>
                     </div>
-                    <h2>Aligning Decisions with <br> Purpose & Precision</h2>
+                    <h2>This is where the doing begins.</h2>
                 </div>
             </div>
 
@@ -226,7 +223,7 @@
                         <span class="icon-union union"></span>
                         <span class="subtitle">Our Clients</span>
                     </div>
-                    <h2>Trusted by Bold and Visionary Brands</h2>
+                    <h2>The ones who made smart choices. </h2>
                 </div>
                 <div class="ourclients-wrapper pt_120">
                     <div class="ourclients-marquee marquee overflow-hidden">
@@ -453,7 +450,7 @@
                         <span class="icon-union union"></span>
                         <span class="subtitle">Testimonial</span>
                     </div>
-                    <h2>Feedback That Fuels Our Mission Forward</h2>
+                    <h2>Praise we didn’t write.</h2>
                 </div>
             </div>
             <div class="testimonialwrap marquee overflow-hidden pt_120">
@@ -606,6 +603,7 @@
     </footer>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/typed.umd.js"></script>
     <script src="./js/custom.js"></script>
     <script>
 
@@ -620,7 +618,18 @@
                 item.classList.add('isactive');
             }
         });
+
+        const typed = new Typed("#typed", {
+            strings: ["Create", "Manage", "Grow"],
+            typeSpeed: 200,
+            backDelay: 2000,
+                        
+            loop: true
+        });
+
     </script>
+
+    
 </body>
 
 </html>

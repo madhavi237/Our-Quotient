@@ -300,6 +300,13 @@ li {
     padding: 0 16px;
 }
 
+span.swipetext span {
+    display: block;
+    margin-left: -15px;
+}
+
+
+
 .sec-padding {
     padding: 120px 0;
 }
@@ -588,24 +595,17 @@ header {
 
 .herotitle {
     font-size: 180px;
-    display: flex;
     margin: 0;
     font-weight: normal;
     line-height: 1.3em;
 }
 
-.height_container {
-    overflow: hidden;
-    vertical-align: middle;
-    height: 1.5em;
-    padding-left: 16px;
+.herotitle .height_container {
+    display: block;
 }
 
 .swipetext {
     font-style: italic;
-    display: inline-block;
-    animation: UpWords 6s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
-    -webkit-animation: UpWords 6s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
 }
 
 .swipetext span:nth-child(1) {
