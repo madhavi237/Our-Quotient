@@ -132,7 +132,7 @@
         width: 6rem;
     }
 
-    .primary-btn>span {
+    .primary-btn {
         border-radius: 17px;
         padding: 20px 18px;
         font-size: 18px;
@@ -310,7 +310,7 @@
         font-size: 22px;
     }
 
-    .primary-btn>span {
+    .primary-btn {
         border-radius: 14px;
         padding: 18px 18px;
         font-size: 16px;
@@ -748,7 +748,7 @@
         margin: 25px 0;
     }
 
-    .primary-btn>span {
+    .primary-btn {
         padding: 16px 14px;
     }
 
@@ -1039,7 +1039,7 @@
         padding: 100px 16px 0;
     }
 
-    .primary-btn>span {
+    .primary-btn {
         padding: 14px 12px;
     }
 
@@ -1149,7 +1149,7 @@
         font-size: 50px;
     }
 
-    .primary-btn>span {
+    .primary-btn {
         font-size: 14px;
     }
 

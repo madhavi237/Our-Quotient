@@ -474,7 +474,7 @@ header {
     visibility: visible;
 }
 
-.primary-btn>span {
+.primary-btn {
     background-color: var(--white);
     color: var(--black);
     font-family: 'Gilroy Regular';
@@ -497,9 +497,42 @@ header {
     -o-transition: all 0.3s ease-in-out;
 }
 
-.primary-btn>span:hover {
+.primary-btn:hover {
     background: transparent;
     color: var(--white);
+}
+
+.primary-btn.textanimate {
+    line-height: 60px;
+}
+
+.textanimate>span {
+    display: block;
+    height: 20px;
+    overflow: hidden;
+}
+
+.hovertext {
+    display: block;
+    height: 100%;
+    transform: translateY(-20px);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    -ms-transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+}
+
+.primary-btn:hover .hovertext {
+    transform: translateY(-40px);
+    -webkit-transform: translateY(-40px);
+    -moz-transform: translateY(-40px);
+    -ms-transform: translateY(-40px);
+    -o-transform: translateY(-40px);
 }
 
 .navlink {
