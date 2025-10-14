@@ -1644,3 +1644,7 @@ ul.footer-links {
 .white.in-reveal.active .ourpropmise_title {
     color: var(--Blue);
 }
+
+.in-mobile {
+    display: none;
+}
