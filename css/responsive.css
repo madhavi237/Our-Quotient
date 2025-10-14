@@ -2,7 +2,7 @@
     .bg_video {
         max-width: 55%;
         top: -15.5rem;
-        right: -12rem;
+        right: -10rem;
     }
 
     .workwedo_middletext h2 {
@@ -92,7 +92,7 @@
     }
 
     .herosection {
-        padding: 150px 0 50px;
+        padding: 120px 0 80px;
     }
 
     .ourpropmise_title p {
@@ -203,9 +203,7 @@
     }
 
     .bg_video {
-        /* height: 106.4375rem;
-        top: -53.5rem;
-        left: 36.5rem; */
+        right: -9rem;
     }
 
     .herosubtitle {
@@ -334,8 +332,8 @@
     }
 
     .bg_video {
-        top: -10.5rem;
-        right: -9rem;
+        top: -11.5rem;
+        right: -7rem;
     }
 
     .workwedo_middletext h2 {
@@ -402,6 +400,7 @@
 
     .herotitle {
         font-size: 120px;
+        line-height: 1.1;
     }
 
     h2, .h2 {
@@ -466,9 +465,12 @@
 }
 
 @media (max-width: 1199px) {
+    .herotitle .height_container {
+        margin-left: 0;
+    }
+
     .bg_video {
         top: -10.5rem;
-        right: -9rem;
         max-width: 62%;
     }
 
@@ -808,11 +810,6 @@
     }
 
     .bg_video {
-        /* top: -45.5rem;
-        left: 23.5rem; */
-    }
-
-    .bg_video {
         max-width: 79%;
     }
 
@@ -840,8 +837,6 @@
 
     .workwedo_wrapper {
         display: flex;
-        /* animation: marquee-animate 40s linear infinite;
-        -webkit-animation: marquee-animate 40s linear infinite; */
     }
 
     .workwedo_box {
@@ -870,7 +865,12 @@
         gap: 50px;
     }
 
-
+    .bg_video {
+        max-width: 58%;
+        top: auto;
+        bottom: 0;
+        right: -3rem;
+    }
 
     .abouts_left {
         max-width: 100%;
@@ -919,15 +919,14 @@
         text-align: center;
         padding: 0
     }
-
-    .bg_video {
-        /* top: -7rem;
-        left: 18rem;
-        height: 100vh; */
-    }
 }
 
 @media (max-width: 575px) {
+
+    .bg_video {
+        max-width: 74%;
+    }
+
     footer.bgpattern::before {
         background-image: url('../images/mobilepattern.svg');
         opacity: 0.3;
@@ -944,12 +943,6 @@
         width: 14.0625rem;
         top: 4rem;
         right: -2rem;
-    }
-
-    .bg_video {
-        max-width: 74%;
-        top: 2rem;
-        right: -4rem;
     }
 
     .turningmiddletitle h2 {
@@ -1030,20 +1023,6 @@
         display: none;
     }
 
-    .bg_video {
-        /* left: 0;
-        bottom: 0;
-        top: 50%;
-        height: 85vh;
-        transform: translateY(-50%); */
-    }
-
-    .bg_video {
-        top: auto;
-        bottom: 0;
-        right: -3rem;
-    }
-
     .herotitle {
         font-size: 60px;
     }
@@ -1066,6 +1045,7 @@
 
     .navbar-branding {
         width: 4.5rem;
+        margin: 0 auto;
     }
 
     .menu-toggle {
@@ -1095,10 +1075,10 @@
         top: 3rem;
         right: -1.5rem;
     }
-
+/* 
     .bg_video {
         max-width: 100%;
-    }
+    } */
 
     .workwedo_middletext h2 {
         font-size: 3rem;
@@ -1159,10 +1139,6 @@
 
     .marqueetext {
         font-size: 60px;
-    }
-
-    .bg_video {
-        /* height: 75vh; */
     }
 
     .herosubtitle {

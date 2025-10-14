@@ -171,21 +171,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // Change bg-color on viewport //
-const aboutSection = document.querySelector('.in-reveal');
+const Sections = document.querySelectorAll('.in-reveal');
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            // Section enters viewport
+            // enters viewport
             entry.target.classList.add('active');
         } else {
-            // Section leaves viewport
+            // leaves viewport
             entry.target.classList.remove('active');
         }
     });
 }, {
-    threshold: 0.1 // 10% visible triggers callback
+    threshold: 0,
+    root: null,
+    rootMargin: '-50% 0px -100% 0px'
 });
 
-// Observe the section
-observer.observe(aboutSection);
+Sections.forEach(section => observer.observe(section));
+
 

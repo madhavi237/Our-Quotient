@@ -607,11 +607,12 @@ header {
     font-size: 180px;
     margin: 0;
     font-weight: normal;
-    line-height: 1.3em;
+    line-height: 1;
 }
 
 .herotitle .height_container {
     display: block;
+    margin-left: -20px;
 }
 
 .swipetext {
@@ -1351,10 +1352,6 @@ footer.bgpattern::before {
     margin: 0;
 }
 
-.ourpropmise_title {
-    color: var(--Blue);
-}
-
 .ourpropmise_title h4 {
     font-weight: normal;
     font-size: 28px;
@@ -1586,12 +1583,22 @@ ul.footer-links {
 .in-reveal.active .subtitle,
 .in-reveal.active .icon-union:before,
 .in-reveal.active .marqueetext {
-    color: var(--Blue);
+    color: var(--Blue) !important;
 }
 
 .in-reveal .subtitle,
 .in-reveal .icon-union:before,
 .in-reveal .marqueetext {
+    color: var(--white) !important;
+    transition: color 0.4s ease;
+    -webkit-transition: color 0.4s ease;
+    -moz-transition: color 0.4s ease;
+    -ms-transition: color 0.4s ease;
+    -o-transition: color 0.4s ease;
+}
+
+.white.in-reveal h2,
+.white.in-reveal .ourpropmise_title {
     color: var(--white);
     transition: color 0.4s ease;
     -webkit-transition: color 0.4s ease;
@@ -1600,21 +1607,7 @@ ul.footer-links {
     -o-transition: color 0.4s ease;
 }
 
-.white_bg.in-reveal .subtitle,
-.white_bg.in-reveal .icon-union:before {
+.white.in-reveal.active h2,
+.white.in-reveal.active .ourpropmise_title {
     color: var(--Blue);
-    transition: color 0.4s ease;
-    -webkit-transition: color 0.4s ease;
-    -moz-transition: color 0.4s ease;
-    -ms-transition: color 0.4s ease;
-    -o-transition: color 0.4s ease;
-}
-
-.white_bg.in-reveal.active .subtitle,
-.white_bg.in-reveal.active .icon-union:before {
-    color: var(--white);
-}
-
-.white_bg.in-reveal.active {
-    background-color: var(--Blue);
 }
