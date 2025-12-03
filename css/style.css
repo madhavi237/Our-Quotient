@@ -747,10 +747,10 @@ header {
 /* marquee */
 .marquee-flex {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width: max-content;
-    animation: marquee-animate 16s linear infinite;
-    -webkit-animation: marquee-animate 16s linear infinite;
+    animation: marquee-animate 30s linear infinite;
+    -webkit-animation: marquee-animate 30s linear infinite;
 }
 
 .marquee-content {
@@ -773,6 +773,10 @@ header {
 
     100% {
         transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
     }
 }
 
@@ -786,6 +790,11 @@ header {
 
 .aboutussection .marquee {
     margin: 120px 0 0;
+}
+
+.aboutussection .abouts_right p:nth-of-type(2),
+.aboutussection .abouts_right p:nth-of-type(3) {
+    margin: 20px 0 0;
 }
 
 .bg_overlay_animate {
@@ -940,6 +949,10 @@ header {
     -moz-transition: all 0.4s ease;
     -ms-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
+}
+
+.serviceslist_content p:nth-of-type(2) {
+    margin-top: 16px;
 }
 
 .listinner {
