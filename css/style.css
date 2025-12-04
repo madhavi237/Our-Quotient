@@ -749,8 +749,8 @@ header {
     display: flex;
     flex-wrap: nowrap;
     width: max-content;
-    animation: marquee-animate 30s linear infinite;
-    -webkit-animation: marquee-animate 30s linear infinite;
+    animation: marquee-animate 20s linear infinite;
+    -webkit-animation: marquee-animate 20s linear infinite;
 }
 
 .marquee-content {
